@@ -1,0 +1,155 @@
+body {
+	background-color: #232c33;
+	font-family: 'Montserrat', sans-serif;
+	color: #fff;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+
+.calculator{
+	margin: auto;
+	padding: 20px;
+	width: 280px;
+	background-color: #1e272e;
+	border-radius: 20px;
+	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+	align-items: center
+}
+
+.screen {
+	margin: auto;
+	margin-bottom: 10px;
+}
+
+.screen input[type=text] {
+	width: 100%;
+	height: 50px;
+	font-size: 24px;
+	padding: 5px;
+	box-sizing: border-box;
+	text-align: right;
+	background-color: #1e272e;
+	border: none;
+	color: #fff;
+}
+
+.buttons {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 10px;
+}
+*
+.buttons button:not(.zero):not(.operator-1):not(.clear){
+	width: 60px;
+	height: 60px;
+	font-size: 24px;
+	margin: 0;
+	background-color: #3a3f46;
+	border: none;
+	box-sizing: border-box;
+	cursor: pointer;
+	color: #fff;
+	border-radius: 10px;
+	transition: background-color 0.2s;
+}
+*/
+/* 
+.buttons button:hover {
+	background-color: #64686e;
+} */
+
+.buttons .operator{
+	background-color: white;
+
+}
+
+
+
+.clear{
+	background-color: pink;
+	grid-auto-flow: column;
+    font-size: 24px;
+    height: 60px;
+	margin: 0;
+	background-color: #e76113;
+	border: none;
+	box-sizing: border-box;
+	cursor: pointer;
+	color: #fff;
+    border-radius: 10px;
+	transition: background-color 0.2s;
+
+}
+
+.buttons button:focus {
+	outline: none;
+}
+
+
+.buttons {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 10px;
+	grid-template-rows: repeat(5, 60px);
+}
+
+.zero {
+	grid-column: 1/3;
+	background-color: pink;
+	grid-auto-flow: column;
+    font-size: 24px;
+    height: 60px;
+	margin: 0;
+	background-color: #e76113;
+	border: none;
+	box-sizing: border-box;
+	cursor: pointer;
+	color: #fff;
+    border-radius: 10px;
+	transition: background-color 0.2s;
+}
+
+.operator-1 {
+	grid-column: 3 / 5;
+	background-color: pink;
+	grid-auto-flow: row;
+    font-size: 24px;
+    height: 60px;
+	margin: 0;
+	background-color: #e76113;
+	border: none;
+	box-sizing: border-box;
+	cursor: pointer;
+	color: #fff;
+    border-radius: 10px;
+	transition: background-color 0.2s;
+}
+
+button:active{
+	transform: scale(0.9);
+}
+
+
+.header {
+	font-family: "Courier New";
+	font-size: 3ex;
+ 
+}
+
+.screen #result{
+	outline-style: ridge;
+	outline-color:rgb(0, 0, 0);
+	opacity: 0.5;
+	padding: 10px;
+	box-shadow: 2px 2px 2px 2px #888888;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	width: 97%;
+	height: 90%;
+}
